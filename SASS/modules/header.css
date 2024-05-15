@@ -12,8 +12,7 @@
   justify-content: center;
   align-items: center;
 }
-.header__arrow {
-  display: flex;
+.header .fa-arrow-left {
   display: none;
   position: absolute;
   font-size: 30px;

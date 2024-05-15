@@ -32,48 +32,63 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 40px;
+  align-items: center;
   text-align: center;
-  padding-left: 40px;
+  padding: 40px 20px;
+  gap: 15px;
+  background-color: var(--main-bg-color);
+}
+.hero h1 {
+  padding: 0px 20px;
+}
+.hero p {
+  font-size: 18px;
+  font-weight: lighter;
 }
 .hero__btn {
   margin-top: 27px;
+  width: 218px;
+  height: 50px;
   display: inline-block;
   padding: 13px 19px;
   font-weight: bold;
   color: var(--white);
-  text-align: center;
   border-radius: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  background-color: linear-gradient(to bottom, var(--primary-color), var(--pink));
+  background: linear-gradient(to bottom, var(--pink), var(--primary-color));
 }
 
 /* Fonctioning section */
-.fonctioning {
+.functioning {
   display: flex;
   flex-direction: column;
-  margin-bottom: 68px;
+  padding-bottom: 68px;
   background-color: var(--white);
+  padding: 0 20px 70px 30px;
 }
-.fonctioning__title {
+.functioning__title {
   margin-top: 48px;
+  margin-bottom: 26px;
 }
-.fonctioning____btnsContainer {
+.functioning__btnsContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 25px;
 }
-.fonctioning__btn {
+.functioning__btn {
+  display: flex;
+  flex-direction: row;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  width: 322px;
+  width: 100%;
+  padding: 28px 0;
+  background-color: var(--main-bg-color);
 }
-.fonctioning__btn-number {
-  position: absolute;
-  top: 27px;
-  left: 12px;
+.functioning__btn-number {
+  position: relative;
+  right: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,14 +98,15 @@
   border-radius: 50px;
   color: var(--white);
 }
-.fonctioning__btn-icon {
+.functioning__btn-icon {
   padding-left: 33px;
   font-size: 1.25rem;
+  color: #7E7E7E;
 }
-.fonctioning__btn-icon--colored {
+.functioning__btn-icon--colored {
   color: var(--primary-color);
 }
-.fonctioning__btn-text {
+.functioning__btn-text {
   padding-left: 28px;
 }
 
@@ -99,36 +115,47 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 66px;
+  padding: 0 20px 66px 20px;
+  background-color: var(--main-bg-color);
 }
 .restaurants__title {
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 .restaurants__cardsContent {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  width: 340px;
+  width: 100%;
 }
 .restaurants__card {
   display: flex;
   flex-direction: column;
-  height: 251px;
   border-radius: 15px;
+  height: 250px;
 }
 .restaurants__card > img {
-  -o-object-fit: cober;
-     object-fit: cober;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 170px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .restaurants__card-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
+  background-color: var(--white);
+  height: 30%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-decoration: none;
+  color: var(--black);
 }
 .restaurants__card-text {
   padding-left: 13px;
+  padding-top: 13px;
 }
 .restaurants__card-name {
   font-size: var(----body-highlight-font-size);
@@ -137,13 +164,14 @@
 .restaurants__card-localisation {
   font-weight: lighter;
 }
-.restaurants__card-heart {
+.restaurants__card-like {
   padding-right: 25px;
-  padding-bottom: 33px;
   font-size: 1.3rem;
 }
-.restaurants__card-heart--gradient {
-  color: linear-gradient(to bottom, var(--primary-color), var(--pink));
+.restaurants__card-like--gradient {
+  background: linear-gradient(to bottom, var(--primary-color), var(--pink));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* Modules */
@@ -161,8 +189,7 @@
   justify-content: center;
   align-items: center;
 }
-.header__arrow {
-  display: flex;
+.header .fa-arrow-left {
   display: none;
   position: absolute;
   font-size: 30px;
@@ -197,7 +224,9 @@
   padding: 22px 25px;
 }
 .footer__logo {
-  height: 27px;
+  font-family: Shrikhand;
+  font-size: 18px;
+  color: white;
 }
 .footer__nav {
   display: flex;
@@ -208,6 +237,7 @@
   display: flex;
   flex-direction: row;
   gap: 11px;
+  color: white;
 }
 .footer__nav i {
   font-size: 13px;
@@ -219,7 +249,6 @@
 }
 
 body {
-  background-color: var(--main-bg-color);
   font-family: var(--body-font);
   font-style: normal;
   font-weight: var(--body-font-weight);
@@ -230,7 +259,7 @@ body {
 main {
   width: 100%;
   max-width: 1440px;
-  min-width: 320px;
+  min-width: 355px;
   box-sizing: border-box;
 }
 
@@ -253,4 +282,8 @@ h2 {
 .text-highlight {
   font-weight: var(--body-hightlight-font-weight);
   font-size: var(--body-hightlight-font-size);
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

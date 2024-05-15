@@ -6,7 +6,8 @@
   --secondary-color: #FCA311;
   --main-bg-color: #F6F6F6;
   --secondary-bg-color: #EAEAEA;
-  --highlight-color: #99E2D0;
+  --green: #99E2D0;
+  --green-font: #008766;
   --pink: #FF79DA;
   --black: #000000;
   --white: #FFFFFF;
@@ -34,24 +35,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 32px 57px 32px;
   gap: 15px;
   background-color: var(--main-bg-color);
 }
 .hero h1 {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 .hero p {
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 .hero__btn {
   margin-top: 27px;
   width: 218px;
-  height: 50px;
+  padding: 13px 0;
   display: inline-block;
-  padding: 13px 19px;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--white);
   border-radius: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
@@ -64,11 +64,11 @@
   flex-direction: column;
   padding-bottom: 68px;
   background-color: var(--white);
-  padding: 0 20px 70px 30px;
+  padding: 0 20px 68px 33px;
 }
 .functioning__title {
   margin-top: 48px;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
 }
 .functioning__btnsContainer {
   display: flex;
@@ -76,19 +76,19 @@
   justify-content: flex-start;
   align-items: center;
   gap: 25px;
+  padding: 0 32px;
 }
 .functioning__btn {
-  display: flex;
-  flex-direction: row;
+  position: relative;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  width: 322px;
-  padding: 28px 0;
+  width: 100%;
+  padding: 28px 35px;
   background-color: var(--main-bg-color);
 }
 .functioning__btn-number {
-  position: relative;
-  right: 12px;
+  position: absolute;
+  left: -12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,6 @@
   color: var(--white);
 }
 .functioning__btn-icon {
-  padding-left: 33px;
   font-size: 1.25rem;
   color: #7E7E7E;
 }
@@ -108,6 +107,7 @@
 }
 .functioning__btn-text {
   padding-left: 28px;
+  font-weight: bold;
 }
 
 /* Resaturants section */
@@ -119,10 +119,10 @@
   background-color: var(--main-bg-color);
 }
 .restaurants__title {
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 54px;
+  margin-bottom: 26px;
 }
-.restaurants__cardsContent {
+.restaurants__cardsContainer {
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -133,12 +133,29 @@
   flex-direction: column;
   border-radius: 15px;
   height: 250px;
+  width: 100%;
 }
-.restaurants__card > img {
+.restaurants__card-imgContainer {
+  position: relative;
+  height: 67%;
+}
+.restaurants__card-imgContainer > img {
   object-fit: cover;
-  height: 170px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+.restaurants__card-badge {
+  position: absolute;
+  text-align: right;
+  top: 12px;
+  right: 12px;
+  color: var(--green-font);
+  background-color: var(--green);
+  padding: 10px;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 .restaurants__card-content {
   display: flex;
@@ -146,26 +163,27 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--white);
-  height: 30%;
+  height: 33%;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   text-decoration: none;
   color: var(--black);
 }
 .restaurants__card-text {
-  padding-left: 13px;
-  padding-top: 13px;
+  padding: 16px;
 }
 .restaurants__card-name {
   font-size: var(----body-highlight-font-size);
   font-weight: bold;
 }
 .restaurants__card-localisation {
+  padding-top: 8px;
+  font-size: 1.06rem;
   font-weight: lighter;
 }
 .restaurants__card-like {
   padding-right: 25px;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
 }
 .restaurants__card-like--gradient {
   background: linear-gradient(to bottom, var(--primary-color), var(--pink));
@@ -196,8 +214,9 @@
   left: 17px;
 }
 .header__logo {
-  height: 36px;
-  margin: auto;
+  font-family: Shrikhand;
+  font-size: 2rem;
+  color: var(--black);
 }
 .header__localisation {
   display: flex;
@@ -206,6 +225,7 @@
   align-items: center;
   height: 50px;
   width: 100%;
+  font-weight: 500;
   background-color: var(--secondary-bg-color);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -224,8 +244,8 @@
 }
 .footer__logo {
   font-family: Shrikhand;
-  font-size: 18px;
-  color: white;
+  font-size: 1.125rem;
+  color: var(--white);
 }
 .footer__nav {
   display: flex;

@@ -8,7 +8,9 @@
   padding: 22px 25px;
 }
 .footer__logo {
-  height: 27px;
+  font-family: Shrikhand;
+  font-size: 18px;
+  color: white;
 }
 .footer__nav {
   display: flex;
@@ -19,6 +21,7 @@
   display: flex;
   flex-direction: row;
   gap: 11px;
+  color: white;
 }
 .footer__nav i {
   font-size: 13px;
