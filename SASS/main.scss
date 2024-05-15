@@ -1,0 +1,59 @@
+/* Variables et Mixins */
+@import 'variables/design.scss';
+@import 'mixins/boutons.scss';
+
+/* Pages */
+@import 'pages/home.scss';
+@import 'pages/menu-restaurant.scss';
+
+/* Modules */
+@import 'modules/header.scss';
+@import 'modules/card.scss';
+@import 'modules/footer.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-style: normal;
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
+    color: var(--black);
+}
+
+main {
+    width: 100%;
+    max-width: 1440px;
+    min-width:355px;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: var(--header-font);
+    font-style: normal;
+    font-weight: var(--header-font-weight);
+    font-size: var(--header-font-size);
+    color: var(--black);
+}
+
+h2 {
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    color: var(--black);
+}
+
+.text-highlight {
+    font-weight: var(--body-hightlight-font-weight);
+    font-size: var(--body-hightlight-font-size);
+
+}
+
+a {
+    text-decoration:none;
+}

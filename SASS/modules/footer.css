@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: var(--white);
+  background-color: var(--black);
+  gap: 16px;
+  padding: 22px 25px;
+}
+.footer__logo {
+  height: 27px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__nav > a {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+}
+.footer__nav i {
+  font-size: 13px;
+}/*# sourceMappingURL=footer.css.map */

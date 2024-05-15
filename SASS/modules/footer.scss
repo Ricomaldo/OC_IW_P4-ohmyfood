@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--white);
+    background-color: var(--black);
+    gap:16px;
+    padding: 22px 25px;
+
+    &__logo {
+        font-family:Shrikhand;
+        font-size:18px;
+        color:white;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    &__nav > a {
+        display:flex;
+        flex-direction: row;
+        gap: 11px;
+        color:white;
+    }
+
+    &__nav i {
+        font-size:13px;
+    }
+}
