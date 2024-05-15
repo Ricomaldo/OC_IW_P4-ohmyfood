@@ -22,13 +22,15 @@ body {
     font-weight: var(--body-font-weight);
     font-size: var(--body-font-size);
     color: var(--black);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 main {
     width: 100%;
-    max-width: 1440px;
     min-width:355px;
-    box-sizing: border-box;
+    margin:auto;
 }
 
 
