@@ -2,8 +2,8 @@
 @mixin cta-btn {
     display: inline-block;
     font-weight: 500;
-    color: var(--white);
+    color: $white;
     border-radius:50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(to bottom, var(--pink), var(--primary-color) );
+    background: linear-gradient(to bottom, $pink, $primary-color);
    }

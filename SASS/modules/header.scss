@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: $white;
     width:100%;
     
     &__logoContainer {
@@ -29,7 +29,7 @@
     &__logo {
         font-family:Shrikhand;
         font-size:2rem;
-        color:var(--black);
+        color:$black;
     }
 
     &__localisation {
@@ -40,7 +40,7 @@
         height: 50px;
         width:100%;
         font-weight:500;
-        background-color: var(--secondary-bg-color);
+        background-color: $secondary-bg-color;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
         @media (min-width: 768px) {

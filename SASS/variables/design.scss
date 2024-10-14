@@ -1,31 +1,29 @@
 /* Design System */
 
-:root {
     /* Colors */
-    --primary-color: #9356DC;
-    --secondary-color: #FCA311;
-    --main-bg-color: #F6F6F6;
-    --secondary-bg-color: #EAEAEA;
-    --green: #99E2D0;
-    --green-font: #008766;
-    --pink: #FF79DA;
-    --black: #000000;
-    --white: #FFFFFF;
+    $primary-color: #9356DC;
+    $secondary-color: #FCA311;
+    $main-bg-color: #F6F6F6;
+    $secondary-bg-color: #EAEAEA;
+    $green: #99E2D0;
+    $green-font: #008766;
+    $pink: #FF79DA;
+    $black: #000000;
+    $white: #FFFFFF;
     
     
     /* Text configuration */
-    --body-font: 'Roboto';
-    --body-highlight-font: 'Roboto';
-    --header-font: 'Roboto';
-    --title-font: 'Roboto';
+    $body-font: 'Roboto';
+    $body-highlight-font: 'Roboto';
+    $header-font: 'Roboto';
+    $title-font: 'Roboto';
 
-    --body-font-weight: 400;
-    --body-highlight-font-weight: 400;
-    --header-font-weight: 700;
-    --title-font-weight: 700;
+    $body-font-weight: 400;
+    $body-highlight-font-weight: 400;
+    $header-font-weight: 700;
+    $title-font-weight: 700;
 
-    --body-font-size: 1rem;
-    --body-highlight-font-size: 1.125rem;
-    --header-font-size: 1.5rem;
-    --title-font-size: 1.5rem;
-}
+    $body-font-size: 1rem;
+    $body-highlight-font-size: 1.125rem;
+    $header-font-size: 1.5rem;
+    $title-font-size: 1.5rem;

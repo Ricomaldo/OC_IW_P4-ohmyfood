@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    color: var(--white);
-    background-color: var(--black);
+    color: $white;
+    background-color: $black;
     gap:16px;
     padding: 22px 25px;
 
@@ -15,7 +15,7 @@
     &__logo {
         font-family:Shrikhand;
         font-size:1.125rem;
-        color:var(--white);
+        color:$white;
     }
 
     &__nav {

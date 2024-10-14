@@ -8,7 +8,6 @@
 
 /* Modules */
 @import 'modules/header.scss';
-@import 'modules/card.scss';
 @import 'modules/footer.scss';
 
 * {
@@ -17,42 +16,38 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: $body-font;
     font-style: normal;
-    font-weight: var(--body-font-weight);
-    font-size: var(--body-font-size);
-    color: var(--black);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    font-weight: $body-font-weight;
+    font-size: $body-font-size;
+    color: $black;
 }
 
 main {
     width: 100%;
-    min-width:355px;
     margin:auto;
 }
 
 
 h1 {
-    font-family: var(--header-font);
+    font-family: $header-font;
     font-style: normal;
-    font-weight: var(--header-font-weight);
-    font-size: var(--header-font-size);
-    color: var(--black);
+    font-weight: $header-font-weight;
+    font-size: $header-font-size;
+    color: $black;
 }
 
 h2 {
-    font-family: var(--title-font);
+    font-family: $title-font;
     font-style: normal;
-    font-weight: var(--title-font-weight);
-    font-size: var(--title-font-size);
-    color: var(--black);
+    font-weight: $title-font-weight;
+    font-size: $title-font-size;
+    color: $black;
 }
 
 .text-highlight {
-    font-weight: var(--body-hightlight-font-weight);
-    font-size: var(--body-hightlight-font-size);
+    font-weight: $body-highlight-font-weight;
+    font-size: $body-highlight-font-size;
 
 }
 
