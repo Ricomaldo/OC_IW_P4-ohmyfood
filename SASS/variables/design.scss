@@ -10,7 +10,8 @@
     $pink: #FF79DA;
     $black: #000000;
     $white: #FFFFFF;
-    
+    $linear-gradient-cta:linear-gradient(to bottom, $pink, $primary-color);
+    $linear-gradient-loader:linear-gradient(0.25turn, $white,$black,$white);;
     
     /* Text configuration */
     $body-font: 'Roboto';

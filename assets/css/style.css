@@ -32,6 +32,10 @@
   border-radius: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  transition: opacity 300ms;
+}
+.hero__btn:hover {
+  opacity: 0.7;
 }
 
 /* Fonctioning section */
@@ -89,7 +93,7 @@
   font-weight: bold;
 }
 
-/* Resaturants section */
+/* Restaurants section */
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -179,10 +183,30 @@
   font-weight: lighter;
 }
 .restaurants__card-like {
-  padding-right: 25px;
+  padding-right: 46px;
   font-size: 1.35rem;
+  position: relative;
 }
-.restaurants__card-like--gradient {
+.restaurants__card-like:hover .coeur-vide {
+  opacity: 0;
+}
+.restaurants__card-like:hover .coeur-plein {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.coeur-vide {
+  position: absolute;
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.coeur-plein {
+  position: absolute;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+  transform: scale(0);
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   color: transparent;
@@ -291,6 +315,80 @@
 }
 .footer__nav i {
   font-size: 13px;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 8px;
+  background: white;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  animation: loader 500ms 2100ms ease-in-out forwards;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.ball-container {
+  display: flex;
+  flex-direction: row;
+  animation: loader-title 2400ms ease-in-out infinite;
+}
+.ball-container .ball {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ball-container .ball1 {
+  animation: ball 1200ms 0ms cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+.ball-container .ball2 {
+  animation: ball 1200ms 600ms cubic-bezier(0.55, 0.08, 0.68, 0.53);
+}
+.ball-container .ball3 {
+  animation: ball 1200ms 1200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes ball {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(2turn);
+  }
+}
+.loader-title {
+  margin-top: 60px;
+  animation: loader-title 2400ms ease-in-out infinite;
+}
+
+@keyframes loader-title {
+  0% {
+    opacity: 0.1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+main, .header-localisation {
+  animation: loader 300ms 1900ms reverse forwards;
 }
 
 * {

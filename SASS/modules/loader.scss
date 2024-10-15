@@ -1,0 +1,80 @@
+.loader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top:8px;
+    background:white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    animation: loader 500ms 2100ms ease-in-out forwards;
+
+}
+
+@keyframes loader{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.ball-container {
+    display: flex;
+    flex-direction: row;
+    animation: loader-title 2400ms ease-in-out infinite;
+
+    .ball {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ball1{
+        animation: ball 1200ms 0ms cubic-bezier(0.47, 0, 0.75, 0.72);
+    }
+    .ball2{
+        animation: ball 1200ms 600ms cubic-bezier(0.55, 0.08, 0.68, 0.53);
+    }
+    .ball3{
+        animation: ball 1200ms 1200ms cubic-bezier(0.42, 0, 0.58, 1);
+    }
+}
+
+@keyframes ball {
+    0% {
+        transform : rotate(0) ;
+    }
+    100% {
+        transform : rotate(2turn) ;
+    }
+}
+
+.loader-title {
+    margin-top: 60px;
+    animation: loader-title 2400ms ease-in-out infinite;
+}
+
+@keyframes loader-title {
+    0% {
+        opacity: 0.1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+main,.header-localisation {
+    animation:loader 300ms 1900ms reverse forwards;
+}
