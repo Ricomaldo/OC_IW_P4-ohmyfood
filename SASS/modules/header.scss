@@ -6,11 +6,11 @@
     
     &__logoContainer {
         display: flex;
-        flex-direction: row;
         height: 63px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) ;
         justify-content: center;
         align-items: center;
+        z-index: 2;
 
         @media (min-width: 768px) {
             box-shadow:none;
@@ -42,6 +42,7 @@
         font-weight:500;
         background-color: $secondary-bg-color;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 1;
 
         @media (min-width: 768px) {
             box-shadow:none;
