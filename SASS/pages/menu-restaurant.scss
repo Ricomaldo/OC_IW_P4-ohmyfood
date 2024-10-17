@@ -1,0 +1,117 @@
+.header-menu {
+    
+    .fa-arrow-left {
+        display: block;
+    }
+}
+
+.menu-cover {
+    height:275px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position:relative;
+    z-index: -1;
+    }
+
+
+.menu {
+    margin-top:-55px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: $main-bg-color;
+    padding: 28px 13px 40px 13px;
+
+    &__nameContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+
+        h2 {
+            font-family: Shrikhand;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color:$black;
+        }
+    }
+
+    &__like {
+        font-size:1.35rem;
+        margin:10px 40px 0 0;
+        
+        &:hover .coeur-vide {
+            opacity: 0;
+        }
+        
+        &:hover .coeur-plein {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap:12px;
+        font-family: Roboto;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 300;
+            &::after {
+                content:"";
+                display: block;
+                width:40px;
+                height: 3px;
+                background-color: $green;
+                margin-top:5px;
+            }
+
+        }
+    }
+
+    &__element {
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+        padding: 15px;
+        background-color: $white;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+
+        &-name {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        &-details {
+            display: flex ;
+            flex-direction: row;
+            justify-content: space-between;
+        
+            &-subtitle {
+                font-size: 0.9rem;
+                font-weight: 300;
+
+            }
+            &-price {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__commandeBtn {
+        margin:auto;
+        &-cta {
+        width:186px;
+        @include cta-btn;
+        }
+    }
+}

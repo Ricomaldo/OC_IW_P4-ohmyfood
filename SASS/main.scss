@@ -2,14 +2,14 @@
 @import 'variables/design.scss';
 @import 'mixins/boutons.scss';
 
-/* Pages */
-@import 'pages/home.scss';
-@import 'pages/menu-restaurant.scss';
-
 /* Modules */
 @import 'modules/header.scss';
 @import 'modules/footer.scss';
 @import 'modules/loader.scss';
+
+/* Pages */
+@import 'pages/home.scss';
+@import 'pages/menu-restaurant.scss';
 
 * {
     margin: 0;

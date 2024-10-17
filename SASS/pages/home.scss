@@ -19,9 +19,8 @@
     }
 
     &__btn {
-        margin-top:27px;
+        margin-top:15px;
         width:218px;
-        padding:13px 0;
         @include cta-btn;
 
     }
@@ -198,17 +197,15 @@
     &__card-like {
         padding-right:46px;
         font-size:1.35rem;
-        position:relative;
         
         &:hover .coeur-vide {
             opacity: 0;
-          }
+        }
           
         &:hover .coeur-plein {
             opacity: 1;
             transform: scale(1);
-          }
-
+        }
     }
 }
 
