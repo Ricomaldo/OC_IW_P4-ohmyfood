@@ -4,12 +4,11 @@
     position: absolute;
     padding-top:8px;
     background:white;
-    z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
+    z-index: 10;
     font-size: 2rem;
     font-weight: 500;
     color: black;
@@ -20,12 +19,13 @@
 @keyframes loader{
     0% {
         opacity: 1;
+
     }
     100% {
         opacity: 0;
+        z-index: -1;
     }
 }
-
 
 .ball-container {
     display: flex;
@@ -59,6 +59,7 @@
 }
 
 .loader-title {
+    background-color: $white;
     margin-top: 60px;
     animation: loader-title 2400ms ease-in-out infinite;
 }
@@ -73,8 +74,4 @@
     100% {
         opacity: 0.1;
     }
-}
-
-main,.header-localisation {
-    animation:loader 300ms 1900ms reverse forwards;
 }

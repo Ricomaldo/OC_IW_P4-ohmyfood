@@ -115,11 +115,11 @@
   position: absolute;
   padding-top: 8px;
   background: white;
-  z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  z-index: 10;
   font-size: 2rem;
   font-weight: 500;
   color: black;
@@ -132,6 +132,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 .ball-container {
@@ -164,6 +165,7 @@
   }
 }
 .loader-title {
+  background-color: #FFFFFF;
   margin-top: 60px;
   animation: loader-title 2400ms ease-in-out infinite;
 }
@@ -179,10 +181,54 @@
     opacity: 0.1;
   }
 }
-main, .header-localisation {
-  animation: loader 300ms 1900ms reverse forwards;
+.apparition {
+  animation: apparition 500ms ease-in-out both;
+}
+.apparition--1 {
+  animation-delay: 150ms;
+}
+.apparition--2 {
+  animation-delay: 300ms;
+}
+.apparition--3 {
+  animation-delay: 450ms;
+}
+.apparition--4 {
+  animation-delay: 600ms;
+}
+.apparition--5 {
+  animation-delay: 750ms;
+}
+.apparition--6 {
+  animation-delay: 900ms;
+}
+.apparition--7 {
+  animation-delay: 1050ms;
+}
+.apparition--8 {
+  animation-delay: 1200ms;
+}
+.apparition--9 {
+  animation-delay: 1350ms;
+}
+.apparition--10 {
+  animation-delay: 1500ms;
+}
+.apparition--11 {
+  animation-delay: 1650ms;
+}
+.apparition--12 {
+  animation-delay: 1800ms;
 }
 
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Pages */
 /* Hero section */
 .hero {
@@ -399,6 +445,10 @@ main, .header-localisation {
 
 .header-menu .fa-arrow-left {
   display: block;
+}
+.header-menu a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .menu-cover {

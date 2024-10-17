@@ -1,0 +1,17 @@
+.apparition {
+    animation: apparition 500ms ease-in-out both ;
+        @for $i from 1 through 12 {
+            &--#{$i} {
+                animation-delay: 150ms * $i;
+            }
+        }
+}
+
+@keyframes apparition {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
