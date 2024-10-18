@@ -1,15 +1,16 @@
 /* bouton avec gradient de couleur */
 @mixin cta-btn {
-    display: inline-block;
-    font-weight: 500;
-    color: $white;
-    border-radius:50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    background: $linear-gradient-cta;
-    transition:opacity 300ms;
-    padding:13px 0;
-    text-align:center;
-    &:hover {
-        opacity: 0.7;
-    }
-   }
+  display: inline-block;
+  padding: 13px 0;
+  font-weight: 500;
+  color: $white;
+  text-align: center;
+  background: $linear-gradient-cta;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
+  transition: opacity 300ms;
+
+  &:hover {
+    opacity: 70%;
+  }
+}

@@ -1,53 +1,55 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 22px 25px;
+  color: $white;
+  background-color: $black;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+  }
+
+  &__logo {
+    font-size: 1.125rem;
+    font-family: Shrikhand;
+    color: $white;
+  }
+
+  &__nav {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    color: $white;
-    background-color: $black;
-    gap:16px;
-    padding: 22px 25px;
+    gap: 7px;
 
     @media (min-width: 768px) {
-        flex-direction: row-reverse;
-        padding:30px 25px;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 44px;
     }
+  }
 
-    &__logo {
-        font-family:Shrikhand;
-        font-size:1.125rem;
-        color:$white;
+  &__nav-cta-links,
+  &__nav-info-links {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 17px;
     }
+  }
 
-    &__nav {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        @media (min-width: 768px) {
-            flex-direction: row;
-            justify-content: flex-end;
-            gap:44px;
-        }
-    }
+  &__nav a {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    color: white;
+  }
 
-    &__nav-cta-links, &__nav-info-links {
-        display:flex;
-        flex-direction: column;
-        gap:7px;
-
-        @media (min-width:768px) {
-            flex-direction:row;
-            gap:17px;
-        }
-    }
-
-    &__nav a {
-        display:flex;
-        flex-direction: row;
-        gap: 11px;
-        color:white;
-    }
-
-    &__nav i {
-        font-size:13px;
-    }
+  &__nav i {
+    font-size: 13px;
+  }
 }

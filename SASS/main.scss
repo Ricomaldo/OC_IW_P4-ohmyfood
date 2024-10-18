@@ -1,58 +1,56 @@
 /* Variables et Mixins */
-@import 'variables/design.scss';
-@import 'mixins/boutons.scss';
+@import "variables/design";
+@import "mixins/boutons";
 
 /* Modules */
-@import 'modules/header.scss';
-@import 'modules/footer.scss';
-@import 'modules/loader.scss';
-@import 'modules/animations.scss';
+@import "modules/header";
+@import "modules/footer";
+@import "modules/loader";
+@import "modules/animations";
 
 /* Pages */
-@import 'pages/home.scss';
-@import 'pages/menu-restaurant.scss';
+@import "pages/home";
+@import "pages/menu-restaurant";
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: $body-font;
-    font-style: normal;
-    font-weight: $body-font-weight;
-    font-size: $body-font-size;
-    color: $black;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  font-family: $body-font;
+  color: $black;
+  font-style: normal;
 }
 
 main {
-    width: 100%;
-    margin:auto;
+  width: 100%;
+  margin: auto;
 }
 
-
 h1 {
-    font-family: $header-font;
-    font-style: normal;
-    font-weight: $header-font-weight;
-    font-size: $header-font-size;
-    color: $black;
+  font-size: $header-font-size;
+  font-weight: $header-font-weight;
+  font-family: $header-font;
+  color: $black;
+  font-style: normal;
 }
 
 h2 {
-    font-family: $title-font;
-    font-style: normal;
-    font-weight: $title-font-weight;
-    font-size: $title-font-size;
-    color: $black;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  font-family: $title-font;
+  color: $black;
+  font-style: normal;
 }
 
 .text-highlight {
-    font-weight: $body-highlight-font-weight;
-    font-size: $body-highlight-font-size;
-
+  font-size: $body-highlight-font-size;
+  font-weight: $body-highlight-font-weight;
 }
 
 a {
-    text-decoration:none;
+  text-decoration: none;
 }
