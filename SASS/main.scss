@@ -5,16 +5,20 @@
 /* Modules */
 @import "modules/header";
 @import "modules/footer";
-@import "modules/loader";
-@import "modules/animations";
 
 /* Pages */
 @import "pages/home";
 @import "pages/menu-restaurant";
 
+/* Animations */
+@import "anims/loader";
+@import "anims/animations";
+
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -26,8 +30,8 @@ body {
 }
 
 main {
-  width: 100%;
-  margin: auto;
+  // width: 100%;
+  // margin: auto;
 }
 
 h1 {

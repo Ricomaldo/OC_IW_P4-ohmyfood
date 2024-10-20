@@ -1,3 +1,4 @@
+//Remplissage du coeur
 .coeur-vide {
   position: absolute;
   opacity: 100%;
@@ -15,12 +16,18 @@
   background-clip: text;
 }
 
+//Apparition progressive des éléments
 .apparition {
   animation: apparition 500ms ease-in-out both;
 
   @for $i from 1 through 12 {
     &--#{$i} {
-      animation-delay: 150ms * $i;
+      animation-delay: $animDur * $i;
+    }
+  }
+  @for $i from 100 through 500 {
+    &--#{$i} {
+      animation-delay: $loadDur + calc($animDur * $i / 100);
     }
   }
 }
@@ -35,14 +42,27 @@
   }
 }
 
+//Apparition de la coche
 .menu {
   &__elementContainer {
     &:hover .menu__element-coche {
       opacity: 100%;
       transform: translateX(-100%);
     }
+    @media (max-width: 400px) {
+      &:hover .version--longue {
+        opacity: 0;
+      }
+      &:hover .version--courte {
+        opacity: 100%;
+      }
+    }
   }
   &__element-coche {
     transition: transform 200ms ease-in-out;
   }
+}
+.version--courte {
+  position: absolute;
+  opacity: 0;
 }
