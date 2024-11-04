@@ -47,7 +47,7 @@
   &__elementContainer {
     &:hover .menu__element-coche {
       opacity: 100%;
-      transform: translateX(-100%);
+      transform: translateX(-84%);
     }
     @media (max-width: 400px) {
       &:hover .version--longue {
@@ -59,7 +59,7 @@
     }
   }
   &__element-coche {
-    transition: transform 200ms ease-in-out;
+    transition: transform 400ms ease-in-out;
   }
 }
 .version--courte {

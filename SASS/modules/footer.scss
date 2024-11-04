@@ -7,7 +7,6 @@
   color: $white;
   background-color: $black;
   gap: 16px;
-  max-width: 1440;
 
   @media (min-width: 768px) {
     flex-direction: row-reverse;

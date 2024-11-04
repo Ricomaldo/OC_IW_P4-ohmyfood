@@ -64,7 +64,6 @@
   color: #fff;
   background-color: #000;
   gap: 16px;
-  max-width: 1440;
 }
 @media (min-width: 768px) {
   .footer {
@@ -423,7 +422,7 @@
 .menu__element-coche {
   position: absolute;
   top: 0;
-  right: -60px;
+  right: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1843,7 +1842,7 @@
 }
 .menu__elementContainer:hover .menu__element-coche {
   opacity: 100%;
-  transform: translateX(-100%);
+  transform: translateX(-84%);
 }
 @media (max-width: 400px) {
   .menu__elementContainer:hover .version--longue {
@@ -1854,7 +1853,7 @@
   }
 }
 .menu__element-coche {
-  transition: transform 200ms ease-in-out;
+  transition: transform 400ms ease-in-out;
 }
 
 .version--courte {
