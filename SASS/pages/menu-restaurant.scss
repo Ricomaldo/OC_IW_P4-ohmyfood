@@ -20,9 +20,7 @@
 .menu {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-
   margin: auto;
   margin-top: -55px;
   padding: 28px 13px 40px;
@@ -96,8 +94,6 @@
   }
 
   &__element {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 15px;
     background-color: $white;
